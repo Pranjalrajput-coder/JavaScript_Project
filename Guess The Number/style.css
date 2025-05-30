@@ -1,0 +1,119 @@
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100%;
+  max-width: 750px;
+  min-width: 480px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #dcd8d8, #58565692);
+  /* background-size: 400% 400%; */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  /* animation: gradientShift 10s ease infinite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Keyframe animation */
+/* @keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+#wrapper {
+  box-sizing: border-box;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  padding: 40px 20px;
+  background-color: #7c7c7c;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  background-color: #504f4f;
+  padding: 15px;
+  margin: 0 0 20px;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#guess {
+  font-size: 45px;
+  margin-top: 60px;
+  color: #fff;
+}
+
+#guessField {
+  color: #000;
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  margin: 20px 0;
+  border-radius: 8px;
+  border: 3px solid #6c6d6d;
+  text-align: center;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: border 0.3s;
+}
+
+#guessField:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button,
+#subt {
+  background-color: #222;
+  color: #fff;
+  width: 80%;
+  max-width: 300px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 18px;
+  border: none;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover,
+#subt:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+
+.lastResult,
+.guesses {
+  color: white;
+  padding: 7px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.guesses {
+  background-color: #7a7a7a;
+}
